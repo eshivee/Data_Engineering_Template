@@ -1,0 +1,17 @@
+project_name: medallion_pipeline
+
+spark:
+  app_name: medallion-app
+  shuffle_partitions: 200
+  master: local[*]
+
+storage:
+  file_format: delta
+
+catalog:
+  name: main
+
+schemas:
+  bronze: bronze
+  silver: silver
+  gold: gold

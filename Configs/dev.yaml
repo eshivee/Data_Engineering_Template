@@ -1,0 +1,13 @@
+environment: dev
+
+catalog:
+  name: dev_catalog
+
+storage:
+  raw_path: s3://dev-bucket/raw/
+  bronze_path: s3://dev-bucket/bronze/
+  silver_path: s3://dev-bucket/silver/
+  gold_path: s3://dev-bucket/gold/
+
+spark:
+  shuffle_partitions: 8

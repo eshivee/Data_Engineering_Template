@@ -1,0 +1,13 @@
+environment: prod
+
+catalog:
+  name: prod_catalog
+
+storage:
+  raw_path: s3://prod-bucket/raw/
+  bronze_path: s3://prod-bucket/bronze/
+  silver_path: s3://prod-bucket/silver/
+  gold_path: s3://prod-bucket/gold/
+
+spark:
+  shuffle_partitions: 400
